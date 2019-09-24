@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/mainImg"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:src="@drawable/def_home_image"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/img_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/ic_back"
+        android:layout_marginStart="20dp"
+        tools:ignore="ContentDescription" />
+
+    <RelativeLayout
+        android:elevation="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="330dp"
+        android:padding="15dp"
+        android:background="@drawable/background"
+        tools:ignore="UnusedAttribute">
+
+        <TextView
+            android:id="@+id/tv_breed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sola"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:textColor="#FFF"
+            android:textSize="15sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/tv_subBreed"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Abyssinian cat"
+            android:textStyle="normal"
+            android:textColor="#FFF"
+            android:layout_below="@+id/tv_breed"
+            android:textSize="14sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_below="@+id/tv_subBreed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rajaji Nagar , 4 th Cross , Rajkumar Road "
+            android:textStyle="normal"
+            android:textColor="#FFF"
+            android:textSize="12sp"
+            android:layout_margin="10dp"
+            tools:ignore="HardcodedText" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tv_desc"
+            android:id="@+id/horizantalRecyclerView"
+            android:layout_margin="10dp" />
+    </RelativeLayout>
+</RelativeLayout>
